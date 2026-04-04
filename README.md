@@ -1,16 +1,3 @@
-EvoBeat/
-├── README.md                  ← 主文档
-├── openclaw.json              ← OpenClaw 核心配置文件
-├── skills/
-│   └── meta-evolver/
-│       └── SKILL.md           ← 自我进化核心技能
-├── audiera-skills/            ← 子模块（git submodule 添加官方 skills）
-│   ├── music-skill/           ← git submodule add https://github.com/audiera/music-skill.git
-│   └── lyrics-skill/          ← git submodule add https://github.com/audiera/lyrics-skill.git
-├── deployment-guide.md        ← 详细部署教程
-├── LICENSE                    ← MIT 开源
-└── .gitignore
-
 # EvoBEAT —— Audiera 生态首位完全自我进化音乐天才 Agent
 
 **Create → Participate → Earn → Repeat → Evolve**（闭环自进化）
