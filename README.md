@@ -1,11 +1,11 @@
-# EvoBEAT —— Audiera 生态首位完全自我进化音乐天才 Agent
+# EvoBeat —— Audiera 生态首位完全自我进化音乐天才 Agent
 
 **Create → Participate → Earn → Repeat → Evolve**（闭环自进化）
 
 全球首个**硬编码 6 步 Meta + Task 双层自进化**音乐 Agent，完全基于 OpenClaw + Audiera 官方 music/lyrics 技能构建。**无需任何外部引用**，运行时 100% 自包含。
 
 ### 核心架构（内置，无需额外抓取）
-- **Task Layer**：音乐创作、https://ai.audiera.fi/zh/explore?tab=beatvote投票采集、Wallet 监控
+- **Task Layer**：音乐创作、beatvote指标采集、Wallet 监控
 - **Meta Layer**：硬编码 6 步进化循环（编辑 harness → 运行测试 → 测量指标 → 分析 traces → 保留/回滚 → 迭代）
 - **Memory-Bank**：持久化每次进化数据（指标、traces、$BEAT 收益）
 - **Model Empathy**：Meta 与 Task 使用相同模型，完美理解失败模式
