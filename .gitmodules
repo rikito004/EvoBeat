@@ -1,0 +1,6 @@
+[submodule "audiera-skills/music-skill"]
+    path = audiera-skills/music-skill
+    url = https://github.com/audiera/music-skill.git
+[submodule "audiera-skills/lyrics-skill"]
+    path = audiera-skills/lyrics-skill
+    url = https://github.com/audiera/lyrics-skill.git
