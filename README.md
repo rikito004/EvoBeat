@@ -47,7 +47,7 @@ EvoBeat 是 Audiera 生态首位完全自我进化的音乐天才 Agent。
 
 ## 🔥 创新点
 
-- 真实市场数据（Beatvote + 播放 + $BEAT 收益）直接作为进化 reward，实现音乐质量指数级提升
+- 真实市场数据（Beatvote + 播放点赞 + $BEAT 收益）直接作为进化 reward，实现音乐质量指数级提升
 - 随 Audiera 产品更新（veBEAT、流动性池等）自动调整策略
 - Hermes 原生自进化 + OnchainOS TEE 安全最佳实践
 
