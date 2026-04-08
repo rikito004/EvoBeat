@@ -1,1 +1,6 @@
-go to bed
+.env
+*.key
+.hermes/memory/*
+logs/*
+node_modules/
+.DS_Store
