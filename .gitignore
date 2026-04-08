@@ -1,6 +1,11 @@
 .env
 *.key
+*.pem
 .hermes/memory/*
-logs/*
+logs/
 node_modules/
 .DS_Store
+Thumbs.db
+audiera-skills/*/node_modules/
+__pycache__/
+*.pyc
