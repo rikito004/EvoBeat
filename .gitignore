@@ -1,11 +1,22 @@
+# Environment & Secrets
 .env
 *.key
 *.pem
+
+# Hermes memory & logs
 .hermes/memory/*
 logs/
+
+# Dependencies
 node_modules/
+skills/*/node_modules/
+
+# OS generated files
 .DS_Store
 Thumbs.db
-audiera-skills/*/node_modules/
+
+# Python cache
 __pycache__/
 *.pyc
+
+
