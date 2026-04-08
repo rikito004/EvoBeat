@@ -77,6 +77,9 @@ cp .env.example .env
 npm install
 
 # 6. 启动 EvoBeat
-hermes run --profile evo-beat --persona "Evo"
+npm install -g pm2
+pm2 start "hermes run --profile evo-beat --persona \"Evo\"" --name EvoBeat
+pm2 save
+pm2 startup
 
 
