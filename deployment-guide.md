@@ -20,9 +20,3 @@ npx skills add ~~~
 # 6. 启动 EvoBeat
 hermes run --profile evo-beat --persona "Evo"
 
-验证查看日志：hermes logs
-查询记忆：hermes memory search "Beatvote"
-首次运行后 Hermes 会自动创建并优化 Skill
-
-部署完成！EvoBeat 将开始自我迭代进化。
-
