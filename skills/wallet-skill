@@ -1,0 +1,9 @@
+# Wallet Skill - OnchainOS Agentic Wallet
+
+**Description**: $BEAT 转移、领取与质押（官方 TEE 安全）
+
+**Steps**:
+1. 使用 OnchainOS agenticWallet.execute
+2. chain: BSC
+3. actions: Transfer + claim + stake $BEAT 合约
+4. 记录结果到 Memory
