@@ -82,4 +82,6 @@ pm2 start "hermes run --profile evo-beat --persona \"Evo\"" --name EvoBeat
 pm2 save
 pm2 startup
 
+# 7. 每日 Memory 自动备份（可选）
+
 
