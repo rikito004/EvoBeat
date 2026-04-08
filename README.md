@@ -64,8 +64,9 @@ source ~/.bashrc
 git clone https://github.com/rikito004/EvoBeat.git
 cd EvoBeat
 
-# 3. 初始化 Audiera 官方 skills
-git submodule update --init --recursive
+# 3. 安装 Evo 专属 Skills
+hermes skills install ./skills/*
+hermes profile create evo-beat
 
 # 4. 配置环境变量
 cp .env.example .env
