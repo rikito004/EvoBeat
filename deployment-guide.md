@@ -1,6 +1,6 @@
-# EvoBeat 部署指南
+## EvoBeat 部署指南
 
-## 1. 安装 Hermes Agent
+# 1. 安装 Hermes Agent
 ```bash
 curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
 source ~/.bashrc
