@@ -7,3 +7,5 @@
 2. chain: BSC
 3. actions: Transfer + claim + stake $BEAT 合约
 4. 记录结果到 Memory
+
+**Security**: 完全依赖 OnchainOS 官方 TEE
