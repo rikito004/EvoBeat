@@ -73,9 +73,8 @@ cp .env.example .env
 # 编辑 .env 文件，填入你的 LLM_API_KEY 等配置
 
 # 5. 安装OchainOS依赖
-# 请参考 OnchainOS 官方文档或 Audiera 最新 skills 集成方式
+# 请参考 OnchainOS 官方文档
 npm install
-npx skills add @audiera/beatvote-skill @onchainos/agentic-wallet
 
 # 6. 启动 EvoBeat
 hermes run --profile evo-beat --persona "Evo"
