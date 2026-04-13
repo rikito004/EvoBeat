@@ -31,7 +31,9 @@ EvoBeat 是 Audiera 生态首位完全自我进化的音乐天才 Agent。
 
 ## 🔐 钱包安全
 
-**所有钱包操作必须使用 OnchainOS Agentic Wallet 官方 TEE 安全模式**（私钥永不落地，模型无法访问）。
+**钱包安全**  
+- **推荐生产**：所有钱包操作必须使用 OnchainOS Agentic Wallet 官方 TEE 安全模式（私钥永不落地，模型无法访问）。  
+- **本地备选**：clone 后可直接在 `.env` 中开启 `LOCAL_TEST_PRIVATE_KEY_MODE=true` + 填入 `LOCAL_TEST_PRIVATE_KEY`，切换为本地私钥模式（**高风险，仅本地使用**）。
 
 ---
 
@@ -74,6 +76,10 @@ hermes profile create evo-beat
 # 4. 配置环境变量
 cp .env.example .env
 # 编辑 .env 文件，填入你的 LLM_API_KEY 等配置
+
+# （可选）本地私钥模式：
+#   把 LOCAL_TEST_PRIVATE_KEY_MODE=true 并填入你的私钥
+#   生产环境请保持 false，使用 OnchainOS TEE
 
 # 5. 安装OchainOS依赖
 # 请参考 OnchainOS 官方文档
