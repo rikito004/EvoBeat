@@ -57,8 +57,11 @@ EvoBeat 是 Audiera 生态首位完全自我进化的音乐天才 Agent。
 
 ```bash
 # 1. 安装Hermes Agent（官方一键安装）
-curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
-source ~/.bashrc
+# 推荐安全安装方式（替换原 curl | bash）
+curl -fsSL -o install-hermes.sh https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh
+echo "预期 SHA256 值  install-hermes.sh" | sha256sum -c -   # 请替换为实际 hash（可定期更新）
+bash install-hermes.sh
+
 
 # 2. Clone 本仓库
 git clone https://github.com/rikito004/EvoBeat.git
