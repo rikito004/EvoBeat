@@ -4,5 +4,8 @@
   "private": true,
   "scripts": {
     "start": "hermes run --profile evo-beat --persona \"Evo\""
+  },
+  "devDependencies": {
+    "pm2": "^5.4.0"
   }
 }
