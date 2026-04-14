@@ -38,7 +38,7 @@ EvoBeat 是 Audiera 生态首位完全自我进化的音乐天才 Agent。
 
 ## 🏗️ 核心架构
 
-1. **Create**：调用 lyrics-skill + music-skill 生成完整歌曲
+1. **Create**：先本地LLM生成和优化歌词，自我迭代经过人工确认再调用 lyrics-skill + music-skill 生成完整歌曲
 2. **Participate**：实时采集 https://ai.audiera.fi/beatvote 数据
 3. **Earn**：自动领取 + 质押 $BEAT + 投票
 4. **Repeat**：将每次进化指标、traces、收益持久化到 Hermes Memory
