@@ -19,3 +19,34 @@
 **输出格式要求**:
 - 最终歌词用 Markdown 代码块包裹
 - 最后附上：`[歌词评分: XX/100] [迭代次数: X/${MAX_LYRICS_ITERATIONS}]`
+  
+**如何使用这个API密钥**:
+- 通过 Bearer Token 调用 Audiera skill 接口。音乐生成是异步的，需要先创建任务，再轮询结果接口拿最终歌曲地址。
+- 鉴权方式
+每次调用 skill API 时，都要在 Authorization 请求头里带上这个 API 密钥。
+Authorization: Bearer <YOUR_API_KEY>
+- POST
+/api/skills/lyrics
+根据灵感提示词生成歌词，需要歌词生成权限。
+curl -X POST /api/skills/lyrics \
+  -H "Authorization: Bearer <YOUR_API_KEY>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "inspiration": "an uplifting song about chasing dreams"
+  }'
+- POST
+/api/skills/music
+用 artistId、styles，以及 lyrics 或 inspiration 创建歌曲生成任务。这个接口返回的是 taskId，不是最终歌曲地址。
+curl -X POST /api/skills/music \
+  -H "Authorization: Bearer <YOUR_API_KEY>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "artistId": "osipvytdvxuzci9pn2nz1",
+    "styles": ["pop"],
+    "lyrics": "[Verse]\nCity lights..."
+  }'
+  - GET
+/api/skills/music/<TASK_ID>
+拿到 taskId 后轮询这个接口，直到任务完成，再从响应里读取最终音乐地址。
+curl -X GET /api/skills/music/<TASK_ID> \
+  -H "Authorization: Bearer <YOUR_API_KEY>"
