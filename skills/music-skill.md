@@ -31,13 +31,13 @@
 
 **如何使用这个API密钥**:
 - 通过 Bearer Token 调用 Audiera skill 接口。音乐生成是异步的，需要先创建任务，再轮询结果接口拿最终歌曲地址。
-- 鉴权方式
-- 每次调用 skill API 时，都要在 Authorization 请求头里带上这个 API 密钥。
+- 鉴权方式：
+```bash
+每次调用 skill API 时，都要在 Authorization 请求头里带上这个 API 密钥。
 Authorization: Bearer <YOUR_API_KEY>
 
 - POST /api/skills/lyrics
 根据灵感提示词生成歌词，需要歌词生成权限。
-
 curl -X POST /api/skills/lyrics \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
@@ -47,7 +47,6 @@ curl -X POST /api/skills/lyrics \
   
 - POST /api/skills/music
 用 artistId、styles，以及 lyrics 或 inspiration 创建歌曲生成任务。这个接口返回的是 taskId，不是最终歌曲地址。
-
 curl -X POST /api/skills/music \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
