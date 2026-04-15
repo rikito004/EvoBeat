@@ -37,6 +37,7 @@ Authorization: Bearer <YOUR_API_KEY>
 
 - POST /api/skills/lyrics
 根据灵感提示词生成歌词，需要歌词生成权限。
+
 curl -X POST /api/skills/lyrics \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
@@ -46,6 +47,7 @@ curl -X POST /api/skills/lyrics \
   
 - POST /api/skills/music
 用 artistId、styles，以及 lyrics 或 inspiration 创建歌曲生成任务。这个接口返回的是 taskId，不是最终歌曲地址。
+
 curl -X POST /api/skills/music \
   -H "Authorization: Bearer <YOUR_API_KEY>" \
   -H "Content-Type: application/json" \
@@ -55,7 +57,7 @@ curl -X POST /api/skills/music \
     "lyrics": "[Verse]\nCity lights..."
   }'
   
-  - GET /api/skills/music/<TASK_ID>
+- GET /api/skills/music/<TASK_ID>
 拿到 taskId 后轮询这个接口，直到任务完成，再从响应里读取最终音乐地址。
 curl -X GET /api/skills/music/<TASK_ID> \
   -H "Authorization: Bearer <YOUR_API_KEY>"
